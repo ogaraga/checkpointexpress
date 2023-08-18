@@ -11,7 +11,7 @@ let hr = new Date().getHours();
 
 let logger = function (req, res, next) {
     if (!(day < 6 && hr <= 17)) {
-             res.send("We are not open to customers yet or we have closed for the day/week. Please kindly check back between 9am-5pm(Mon-Fri). Thank you!");
+                res.send("We are not open to customers yet or we have closed for the day/week. Please kindly check back between 9am-5pm(Mon-Fri). Thank you!");  
     }
 
     else {
@@ -38,4 +38,4 @@ app.get("/Services", (req, res) => {
 
 app.use("/public", express.static("public"));
 
-app.listen(port, console.log("App listening on port(5500) @ " + new Date().getHours()+"hrs: "+ new Date().getMinutes()+"mins: "+new Date().getSeconds()+"sec"));
+app.listen(port, console.log(`App listening on port ${port} @ ` + new Date().getHours()+"hrs: "+ new Date().getMinutes()+"mins: "+new Date().getSeconds()+"sec"));
