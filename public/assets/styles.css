@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.headerbar {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  height: 10vh;
+  width: 100%;
+}
+body {
+  background-color: coral;
+  width: 100%;
+}
+#h1 {
+  color: white;
+  font-size: 20px;
+  font-variant: small-caps;
+  word-spacing: 10px;
+  background-color: aqua;
+  background: linear-gradient(to left, aqua, green, lightblue, lightyellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 20px;
+  padding: 10px;
+}
+.home{
+    text-align: center;
+    color: aliceblue;
+}
+.contact{
+    text-align: center;
+    color: aliceblue;
+}
+.services{
+    text-align: center;
+    color: aliceblue;
+}
+#lorem{
+    text-align: center;
+    color: blue;
+    margin: 10px;
+    line-height: 2;
+    font-size: 20px;
+}
+form{
+    display: grid;
+    place-content: center;
+    width: 80%;
+    height: auto;
+    background-color: aqua;
+    margin: 20px auto;
+}
+input{
+    padding: 10px;
+}
+#submit{
+    background-color: blue;
+    cursor: pointer;
+    color: aqua;
+    transition: all 1s ease-in-out;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+}
+#submit:hover{
+    background-color: white;
+    color: black;
+}
+label{
+    font-size: 20px;
+    color: coral;
+    text-transform: uppercase;
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    font-size: 25px;
+    bottom: 0;
+    color: white;
+}
+footer p{
+    margin-top: 10px;
+}
+
+#images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 10px auto;
+    gap: 10px;
+}
+#images img{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: auto 10px;
+    border-radius: 50%;
+    
+}
+#images img:hover{
+    transform: rotate(90deg) scaleZ(0.3);
+    box-shadow: 2px 4px 6px 8px black, -2px -4px 6px 8px blue;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+.navbar .link {
+  color: white;
+  margin: 0 10px;
+  padding: 5px;
+  font-size: 15px;
+  text-decoration: none;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+.navbar .link:hover {
+  color: coral;
+  padding: 10px;
+}
