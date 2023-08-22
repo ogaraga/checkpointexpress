@@ -9,24 +9,35 @@
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  height: 10vh;
+  height: 15vh;
   width: 100%;
 }
 body {
   background-color: coral;
   width: 100%;
 }
+.heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#days, #hrs{
+  color: greenyellow;
+  margin-left: 15px;
+  font-size: 12px;
+}
 #h1 {
   color: white;
-  font-size: 20px;
+  font-size: 25px;
   font-variant: small-caps;
   word-spacing: 10px;
   background-color: aqua;
   background: linear-gradient(to left, aqua, green, lightblue, lightyellow);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin: 0 20px;
-  padding: 10px;
+  margin-left:15px;
+  margin-top: auto;
 }
 .home{
     text-align: center;
@@ -115,7 +126,7 @@ footer p{
 .navbar {
   display: flex;
   justify-content: space-between;
-  margin: 0 20px;
+  margin: 0 10px;
 }
 .navbar .link {
   color: white;

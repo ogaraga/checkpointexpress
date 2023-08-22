@@ -8,12 +8,34 @@
 </head>
 <body>
     <div class="headerbar">
+        <div class="headings">
         <h1 id="h1">checkpointNodejs</h1>
+        <span id="days"></span>
+        <span id="hrs" ></span>
+        </div>        
+        
         <div class="navbar">
             <a href="/" class="link">HOME</a>
             <a href="/Services" class="link">SERVICES</a>
             <a href="/Contact" class="link">CONTACT US</a>
         </div>
     </div>
+    <script>
+        var days= document.getElementById('days'),
+        hrs = document.getElementById('hrs');
+
+        let day = new Date().getDay(), 
+            hr = new Date().getHours(); 
+
+        if(hr < 10){
+        days.innerHTML = `Work-Days : Mon-Fri (DayNow : ${day})`+"<br>"; 
+        hrs.innerHTML = `Office Opens : 9am-5pm (TimeNow: 0${hr}00hrs)`
+        }
+        else{
+        days.innerHTML = `Work-Days : Mon-Fri (DayNow : ${day})`; 
+        hrs.innerHTML = `Office Opens : 9am-5pm (TimeNow: ${hr}00hrs)`
+    };
+        
+    </script>
 </body>
 </html>
